@@ -1,0 +1,59 @@
+@model IEnumerable<GreenhavenMgmt.Models.Person>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Current Deceased Buried at Greenhaven</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Birth Year
+            </th>
+            <th>
+                Death Year
+            </th>
+            <th>
+                Plot #
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.firstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.deathYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.plot_id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
