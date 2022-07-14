@@ -11,55 +11,31 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.firstName)
+            First Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.firstName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.lastName)
+            Last Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.lastName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.birthYear)
+            Date of Birth
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.birthYear)
+            @Html.DisplayFor(model => model.birthMonth) - @Html.DisplayFor(model => model.birthDay) - @Html.DisplayFor(model => model.birthYear)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.birthMonth)
+            Date of Death
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.birthMonth)
+            @Html.DisplayFor(model => model.deathMonth) - @Html.DisplayFor(model => model.deathDay) - @Html.DisplayFor(model => model.deathYear)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.birthDay)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.birthDay)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.deathYear)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.deathYear)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.deathMonth)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.deathMonth)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.deathDay)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.deathDay)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.plot_id)
+            Plot #
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.plot_id)
