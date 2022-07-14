@@ -13,8 +13,3 @@ public class Person
     public int deathDay { get; set; }
     public int plot_id { get; set; }
 }
-
-public class plot
-{
-    public int plot_id { get; set; }
-}

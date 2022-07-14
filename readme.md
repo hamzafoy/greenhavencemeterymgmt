@@ -51,6 +51,8 @@
 
 * **Use a LINQ query to retrieve information from a data structure (such as a list or array) or file**
 
+* **Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)**
+
 <hr>
 
 <div  id='id-section3'/>
