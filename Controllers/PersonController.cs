@@ -55,7 +55,7 @@ namespace GreenhavenMgmt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,firstName,lastName,birthYear,deathYear,plot_id")] Person person)
+        public async Task<IActionResult> Create([Bind("id,firstName,lastName,birthYear,birthMonth,birthDay,deathYear,deathMonth,deathDay,plot_id")] Person person)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace GreenhavenMgmt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,firstName,lastName,birthYear,deathYear,plot_id")] Person person)
+        public async Task<IActionResult> Edit(int id, [Bind("id,firstName,lastName,birthYear,birthMonth,birthDay,deathYear,deathMonth,deathDay,plot_id")] Person person)
         {
             if (id != person.id)
             {
