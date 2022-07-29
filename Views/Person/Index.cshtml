@@ -38,6 +38,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
+        
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.firstName)
@@ -75,3 +76,18 @@
 }
     </tbody>
 </table>
+
+<div id="burialChart"></div>
+
+<script>
+    @foreach (var item in Model)
+    {
+        var birthYearTwentyTwenty = 0;
+        var birthYearTwentyTwentyTwo = 0;
+        if(item.birthYear == 2020) {
+            birthYearTwentyTwenty++;
+        } else if (item.birthYear == 2022) {
+            birthYearTwentyTwentyTwo++;
+        }
+    }
+</script>

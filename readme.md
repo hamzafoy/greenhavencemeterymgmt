@@ -53,6 +53,8 @@
 
 * **Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)**
 
+* **Visualize data in a graph, chart, or other visual representation of data - displaying data in a table**
+
 <hr>
 
 <div  id='id-section3'/>
