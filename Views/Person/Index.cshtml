@@ -47,10 +47,18 @@
                 @Html.DisplayFor(modelItem => item.lastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.birthMonth)/@Html.DisplayFor(modelItem => item.birthDay)/@Html.DisplayFor(modelItem => item.birthYear)
+                @* @Html.DisplayFor(modelItem => item.birthMonth)/@Html.DisplayFor(modelItem => item.birthDay)/@Html.DisplayFor(modelItem => item.birthYear) *@
+                @{
+                    DateTime birthDate = new DateTime(item.birthYear, item.birthMonth, item.birthDay);
+                    @birthDate.ToString("MMMM dd, yyyy")
+                }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.deathMonth)/@Html.DisplayFor(modelItem => item.deathDay)/@Html.DisplayFor(modelItem => item.deathYear)
+                @* @Html.DisplayFor(modelItem => item.deathMonth)/@Html.DisplayFor(modelItem => item.deathDay)/@Html.DisplayFor(modelItem => item.deathYear) *@
+                @{
+                    DateTime deathDate = new DateTime(item.deathYear, item.deathMonth, item.deathDay);
+                    @deathDate.ToString("MMMM dd, yyyy")
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.plot_id)

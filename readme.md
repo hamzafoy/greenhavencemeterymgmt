@@ -46,14 +46,21 @@
 * Has at least 3 functions or methods with at least one returning a value that is used in the application. &radic;
 
 * **Create an additional class which inherits one or more properties from its parent**
+`PersonController inheriting from Controller`
 
 * **Read data from an external file, such as text, JSON, CSV, etc and use that data in your application**
+`Reading data from a SQLite database file.`
 
 * **Use a LINQ query to retrieve information from a data structure (such as a list or array) or file**
 
 * **Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)**
+`Calculating timelapse (in years) since burial in the localhost/Person page.`
 
 * **Visualize data in a graph, chart, or other visual representation of data - displaying data in a table**
+`The table in the localhost/Person page.`
+
+* **Build a conversion tool that converts user input to another type and displays it (ex: converts cups to grams)**
+`Taking the database data regarding birth day, month, year & death day, month, year & converting it into a DateTime type.`
 
 <hr>
 
